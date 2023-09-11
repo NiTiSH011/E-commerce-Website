@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\clone project\css\loginpage.css">
+    <title>Rio Mart Signin</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bluebox">
+            <div class="box signin">
+                <h2>Already have an account?</h2>
+                <button class=" signinbtn" type="submit ">SIGNIN</button>
+            </div>
+            <div class="box signup">
+                <h2>Create a new account?</h2>
+                <button class=" signupbtn" type="submit ">SIGNUP</button>
+            </div>
+        </div>
+        <div class="formbox ">
+            <div class="form signinform">
+                <form name="signinform" onsubmit="return validatesigninform()">
+                    <h3>Signin</h3>
+                    <div class="inputbox">
+                        <input type="email" name="Email" id="signinEmail" required>
+                        <label name=" signinEmail ">Email:</label>
+                        <span class="formerror"></span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="password" name="Password" id="signinPassword" required>
+                        <label name="signinPassword ">Password:</label>
+                        <span class="formerror"></span>
+                    </div>
+                    <button>Submit</button>
+                    <a href="#">Forgot Password?</a>
+                </form>
+            </div>
+            <div class="form signupform">
+                <form name="signupform" onsubmit="return validatesignupform()">
+                    <h3>Signup</h3>
+                    <div class="inputbox">
+                        <input type="text" name="Name" id="Name" required>
+                        <label name="Name">Name:</label>
+                        <span class="formerror"></span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="email" name="Email" id="signupEmail" required>
+                        <label name="signupEmail">Email:</label>
+                        <span class="formerror"></span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="password" name="Password" id="signupPassword" required>
+                        <label name="signupPassword ">Password:</label>
+                        <span class="formerror"></span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="password" name="confirmPassword" id="signupconfirmPassword" required>
+                        <label name="signupconfirmPassword">Confirm Password:</label>
+                        <span class="formerror"></span>
+                    </div>
+                    <button type="submit">Submit</button>
+                    <a href="#">Forgot Password?</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="C:\clone project\JS\loginpage.js"></script>
+
+</html>
